@@ -12,10 +12,10 @@ I haven't completely dropped `requirements.txt` and `requirements-dev.txt` files
 Just provide the path to a Python project directory or a `pyproject.toml` file and extract base dependencies, optional dependencies, or all dependencies from the `pyproject.toml` file.
 
 ```bash
-# generate a file with only a projects base dependencies
+# generate a file with only the base dependencies of a package
 $ depex --no-opts > requirements.txt
 
-# or generate a file with all of a projects dependencies
+# or generate a file with all dependencies (including optional) of a package
 depex > requirements-dev.txt
 ```
 
