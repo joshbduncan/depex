@@ -1,4 +1,4 @@
-# DEPEX - pyproject.toml Dependencies Extractor
+# DepEx
 
 Extract Python project dependencies from a `pyproject.toml` file.
 

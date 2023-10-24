@@ -5,14 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "depex"
 version = "0.1.0"
-authors = [
-    {name = "Josh Duncan", email = "joshbduncan@gmail.com"},
-]
+authors = [{ name = "Josh Duncan", email = "joshbduncan@gmail.com" }]
 description = "Extract project requirements from pyproject.toml."
 readme = "README.md"
 requires-python = ">=3.11"
 keywords = ["packaging", "pyproject", "toml", "utility"]
-license = {text = "MIT License"}
+license = { text = "MIT License" }
 classifiers = [
     "Intended Audience :: End Users/Desktop",
     "License :: OSI Approved :: MIT License",
@@ -21,6 +19,7 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Typing :: Typed",
 ]
 
@@ -62,14 +61,10 @@ profile = "black"
 
 [tool.pytest.ini_options]
 addopts = "--cov=depex"
-testpaths = [
-    "tests",
-]
+testpaths = ["tests"]
 
 [tool.coverage.run]
-omit = [
-    "src/depex/__main__.py",
-    ]
+omit = ["src/depex/__main__.py"]
 
 [tool.mypy]
 mypy_path = "src"
